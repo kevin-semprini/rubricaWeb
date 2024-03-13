@@ -15,7 +15,13 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        return View();
+        List<string> lista = new();
+
+        lista.Add("marco1");
+        lista.Add("marco2");
+        lista.Add("marco3");
+
+        return View( lista );
     }
 
     public IActionResult Privacy()
